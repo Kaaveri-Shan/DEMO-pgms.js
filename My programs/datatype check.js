@@ -1,0 +1,10 @@
+let message = "Hello, World!"; 
+let score = 100; 
+let isCompleted = true; 
+let unknown; 
+let emptyValue = null; 
+console.log(typeof message); 
+console.log(typeof score); 
+console.log(typeof isCompleted);  
+console.log(typeof unknown);
+console.log(typeof emptyValue);
