@@ -1,0 +1,79 @@
+let numbers = [1, 2, 3];
+let squares = numbers.map(x => x * x); 
+console.log(squares);
+                            VM319:3 (3) [1, 4, 9]
+                            undefined
+let numbers = [1, 2, 3, 4];
+let evenNumbers = numbers.filter(x => x % 2 === 0);
+console.log(evenNumbers);
+                              VM323:3 (2) [2, 4]
+                              undefined
+let numbers = [1, 2, 3, 4];
+let sum = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log(sum);
+                              VM349:3 10
+                              undefined
+let num = 3.14159;
+console.log(num.toFixed(2));
+                              VM397:2 3.14
+                              undefined
+let num = 3.1;
+console.log(num.toFixed(2));
+                                VM405:2 3.10
+                                undefined
+let num = 3.1;
+console.log(num.toFixed(5));
+                              VM412:2 3.10000
+                              undefined
+let num = 123;
+console.log(num.toString());
+                              VM518:2 123
+                              undefined
+let str = "123";
+console.log(parseInt(str));
+                              VM536:2 123
+                              undefined
+let str = "123.45";
+console.log(parseFloat(str));
+                              VM540:2 123.45
+                              undefined
+let result = isNaN("hello");
+console.log(result);
+                              VM544:2 true
+                              undefined
+let result = isNaN("1");
+console.log(result);
+                              VM549:2 false
+                              undefined
+let result = isNaN("1a");
+console.log(result);
+                              VM553:2 true
+                              undefined
+console.log(Math.random());
+                              VM557:1 0.765391291483388
+                              undefined
+console.log(Math.random());
+                              VM561:1 0.5721554475981969
+                              undefined
+let num = 3.6;
+console.log(Math.round(num));
+                              VM565:2 4
+                              undefined
+let num = 3.2;
+console.log(Math.round(num));
+                              VM569:2 3
+                              undefined
+let num = 36.9;
+console.log(Math.round(num));
+                                VM575:2 37
+                                undefined
+console.log(Math.max(1, 2, 0)); 
+console.log(Math.min(1, 2, 9));
+                              VM598:1 2
+                              VM598:2 1
+                              undefined
+console.log(Math.max(1, 2, 9)); 
+console.log(Math.min(1, 2, 0));
+                                VM616:1 9
+                                VM616:2 0
+                                undefined
