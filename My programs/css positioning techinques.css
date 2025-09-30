@@ -1,0 +1,71 @@
+/* Fixed Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Main Content */
+.content {
+  margin-top: 60px; /* space for navbar */
+  padding: 20px;
+}
+
+/* Static Title */
+h1 {
+  position: static; /* default */
+  color: darkblue;
+}
+
+/* Relative Subtitle */
+h2 {
+  position: relative;
+  left: 20px; /* slight shift */
+  color: darkgreen;
+}
+
+/* Layout for Articles + Sidebar */
+.layout {
+  display: flex;
+  gap: 20px;
+}
+
+/* Articles Section */
+.articles {
+  flex: 3;
+}
+
+/* Article Box */
+.article {
+  position: relative; /* parent for absolute child */
+  background: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Absolute Button inside Article */
+.read-more {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: orange;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sticky Sidebar */
+.sidebar {
+  flex: 1;
+  position: sticky;
+  top: 70px; /* sticks below navbar */
+  background: lightyellow;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
